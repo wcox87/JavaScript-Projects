@@ -1,7 +1,15 @@
 function voter_function(){
     var age = prompt("How old will you be on November 3rd?")
     can_vote = (age >= 18) ? "You are old enough" : "You are not old enough"
-    document.getElementById("voterage").innerHTML = can_vote + " to vote."
+    if (age > 110) {
+        alert("Are you sure you didn't mistype your age?");
+        age = prompt("Please confirm your age.");
+        can_vote = (age >= 18) ? "You are old enough" : "You are not old enough"
+        document.getElementById("voterage").innerHTML = can_vote + " to vote."
+    }
+    else {
+        document.getElementById("voterage").innerHTML = can_vote + " to vote."
+    }
 }
 
 class Vehicle {
@@ -52,7 +60,8 @@ function countdown_function(){
     document.getElementById("Nested_Function").innerHTML = Countdown();
     function Countdown(){
         var startingclock = 10
-        while (startingclock > 0) {
+        alert(startingclock);
+        while (startingclock >= 1) {
             startingclock --;
             alert(startingclock);
         }
