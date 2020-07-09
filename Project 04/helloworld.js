@@ -1,26 +1,51 @@
-var x = 7;
-var y = 9;
-var add = x+y;
-var sub = y-x;
-var multi = x*y;
-var divi = y/x;
-
 function addfunc(){
+    var x = 7;
+    var y = 9;
+    var add = x+y;
     document.getElementById("addition").innerHTML = (add);
 }
 
 function subfunc() {
+    var x = 7;
+    var y = 9;
+    var sub = y-x;
     document.getElementById("subtract").innerHTML = (sub);
 }
 
 function multifunc() {
+    var x = 7;
+    var y = 9;
+    var multi = y * x;
     document.getElementById("multiply").innerHTML = (multi);
 }
 
 function divifunc() {
+    var x = 7;
+    var y = 9;
+    var divi = y / x;
     document.getElementById("division").innerHTML = (divi);
 }
 
+function incfunc() {
+    var x = 7;
+    var y = 9;
+    var increment = ++x;
+    document.getElementById("increment").innerHTML = (increment);
+}
+
+function decfunc() {
+    var x = 7;
+    var y = 9;
+    var decrement = --x;
+    document.getElementById("decrement").innerHTML = (decrement);
+}
+
+function modfunc() {
+    var x = 7;
+    var y = 9;
+    var modulus = y % x;
+    document.getElementById("modulus").innerHTML = (modulus);
+}
 function randmath(){
     var randomnumber1 = Math.floor(Math.random() * 11);
     var randomnumber2 = Math.floor(Math.random() * 11);
