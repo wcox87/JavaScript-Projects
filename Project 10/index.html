@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--REQUIRED SCRIPTS-->
+    <script src="methods.js"></script>
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <meta charset="UTF-8">
+    <title>JS Project 10</title>
+</head>
+
+<body onload="showSlides()">
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/image1.jpg" style="width:100%">
+            <div class="text">A Kitten</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/image2.jpg" style="width:100%">
+            <div class="text">Sleepy Cat</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/image4.jpg" style="width:100%">
+            <div class="text">Orange cat in a tree</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <br>
+    <br>
+    <p>How many seconds would you like to set your alarm for?</p>
+    <input id="seconds" value="" />
+    <button onclick="countdown(); tick();">Cick Here</button>
+    <p id="timer"></p>
+</body>
+</html>
