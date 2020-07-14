@@ -1,0 +1,35 @@
+#contactForm {
+    background-color: #f7e6b7;
+    width: 25%;
+}
+
+.textField {
+    border: 2px solid black;
+}
+
+.textField:focus {
+    border: 3px solid blue;
+}
+
+textarea {
+    border: 2px solid black;
+    resize: none;
+}
+
+textarea:focus {
+    border: 3px solid blue;
+}
+
+.formLabel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    vertical-align: top;
+    padding-right: 24px;
+    padding-bottom: 15px;
+}
+
+.formLabelMessage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    vertical-align: top;
+}

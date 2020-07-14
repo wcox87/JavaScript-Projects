@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <title>Form Project</title>
+
+</head>
+
+<body>
+   <form id="contactForm">
+       <label class="formLabel" for="name">Your Name:</label>
+       <input type="text" class="textField" id="name" name="name" placeholder="Your Name"><br>
+       <label class="formLabel" for="email">Your Email:</label>
+       <input type="text" class="textField" id="email" name="email" placeholder="Your Email"><br>
+        <label class="formLabelMessage" for="message">Your Message:</label>
+       <!-- <input type="text" class="textFieldMessage" id="message" name="email" placeholder="Your Message..."><br>-->
+       <textarea id="textMessage" name="message" id="message" cols="50" rows="4" placeholder="Your Message..."></textarea><br>
+        <input onclick="validateForm()" type="submit" value="Submit">
+   </form>
+</body>
+<script src="./resources/scripts/form.js"></script>
+</html>
