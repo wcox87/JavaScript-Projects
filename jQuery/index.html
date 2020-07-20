@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        
+    </body>
+
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                        <div id='container'>\
+                                <div id='inner'>\
+                                        <h1>Basic jQuery</h1>\
+                                        <p id='1'>Paragraph 1</P>\
+                                        <p id='2'>Paragraph 2</P>\
+                                        <p id='3'>Paragraph 3</P>\
+                                </div>\
+                        </div>\
+                    </body>"
+                        
+            );
+            $("#2").css({"color":"red"});
+            $("#3").click(function() {
+                $('h1').slideUp (800);
+                console.log("You clicked paragraph 3 and hid the h1 element!")
+            });
+        });
+    </script>
+
+
+</html>
